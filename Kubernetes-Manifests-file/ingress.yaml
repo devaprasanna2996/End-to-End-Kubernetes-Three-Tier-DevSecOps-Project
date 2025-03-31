@@ -6,9 +6,8 @@ metadata:
   annotations:
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'
-    service.beta.kubernetes.io/aws-load-balancer-eip-allocations=eipalloc-066f2201dcfbd6c5d,eipalloc-0dc581f069762b3c3
-    # alb.ingress.kubernetes.io/subnets: "subnet-0aa439b4ddafcca10,subnet-0b95df318219145ca,subnet-0ccca36474902829a"
+    alb.ingress.kubernetes.io/listen-ports: '[{"HTTP": 80}]'c3
+    alb.ingress.kubernetes.io/subnets: "subnet-0aa439b4ddafcca10,subnet-0b95df318219145ca,subnet-0ccca36474902829a"
 spec:
   ingressClassName: alb 
   rules:
